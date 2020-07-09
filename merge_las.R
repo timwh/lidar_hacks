@@ -10,6 +10,6 @@ FileType<-"las" # Are input files las or laz?
 ### Select output file name
 MergeFileName<-"Output_merge"
 
-#Create command string and run in shell
+### Builds command string and run in shell
 ShellString<-paste("lasmerge -i *.",FileType," -o ",MergeFileName,".",FileType,sep="")
 shell(ShellString)
