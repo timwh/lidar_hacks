@@ -8,7 +8,7 @@ from os.path import basename
 root_dir = gu.diropenbox("Select folder location", "Choose folder", "C:\\")
 os.chdir(root_dir)
 
-# Select location of executables
+# Select las file to shift
 filename = gu.fileopenbox("Locate the las file", "Find las", default=os.path.join(root_dir, "*.las"))
 print(filename)
 filename = basename(filename)
